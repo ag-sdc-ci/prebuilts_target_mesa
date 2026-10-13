@@ -1,0 +1,11 @@
+prefix=/apex/org.blisslabs.ag.mesa
+includedir=${prefix}.dev/include
+libdir=${prefix}/lib
+
+gbmbackendspath=/apex/org.blisslabs.ag.mesa/lib
+
+Name: gbm
+Description: Mesa gbm library
+Version: 26.0.8
+Libs: -L${libdir} -L${prefix}.dev/lib -lgbm_mesa
+Cflags: -I${includedir}

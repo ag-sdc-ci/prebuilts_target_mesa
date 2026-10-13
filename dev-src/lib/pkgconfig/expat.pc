@@ -1,0 +1,9 @@
+prefix=/apex/org.blisslabs.ag.mesa
+includedir=${prefix}.dev/include
+libdir=${prefix}/lib
+
+Name: expat
+Description: expat: expat
+Version: 2.5.0
+Libs: -L${libdir} -L${prefix}.dev/lib -lexpat
+Cflags: -I${includedir}

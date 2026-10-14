@@ -1,0 +1,10 @@
+prefix=/apex/org.blisslabs.ag.mesa
+includedir=${prefix}.dev/include
+libdir=${prefix}/lib
+
+Name: glesv1_cm
+Description: Mesa OpenGL ES 1.1 CM library
+Version: 26.0.8
+Libs: -L${libdir} -L${prefix}.dev/lib -lGLESv1_CM_mesa
+Libs.private: -lpthread -pthread -lm
+Cflags: -I${includedir}

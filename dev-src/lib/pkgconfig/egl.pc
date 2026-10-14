@@ -1,0 +1,11 @@
+prefix=/apex/org.blisslabs.ag.mesa
+includedir=${prefix}.dev/include
+libdir=${prefix}/lib
+
+Name: egl
+Description: Mesa EGL Library
+Version: 26.0.8
+Requires.private: libdrm >=  2.4.75
+Libs: -L${libdir} -L${prefix}.dev/lib -lEGL
+Libs.private: -lpthread -pthread -lm
+Cflags: -I${includedir}

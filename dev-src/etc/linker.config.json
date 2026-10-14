@@ -1,0 +1,18 @@
+{
+	"provideLibs": [	
+		    "libdummy_headers_mesa-x86_64-v2.so",
+		    "libdummy_headers_mesa.so",
+		    "libdummy_mesa_dev-x86_64-v2.so",
+		    "libdummy_mesa_dev.so",
+		    "libdummy_pkgconfig_mesa-x86_64-v2.so",
+		    "libdummy_pkgconfig_mesa.so"
+	],
+	"requireLibs": [	
+		    "libLLVM.so",
+		    "libdrm.so",
+		    "libdummy-mesa.so",
+		    "libelf.so",
+		    "libva.so"
+	],
+	"visible": true
+}

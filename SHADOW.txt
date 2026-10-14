@@ -1,0 +1,8 @@
+shadow prebuilt repo: mesa (target)
+  registry: org.blisslabs.ag.mesa v26.0.8-1, Forgejo ag-ci apex repo, 2026-06-20
+  api-level: 32 (CI-built; branch 32-20261013)
+  upstream: external/mesa
+  layout: *.apex blobs at root; dev payload extracted under dev-src/;
+          root Android.bp regenerated via tools/gen_extractive_bp.py on dev-src
+          (srcs rewritten to dev-src/ prefix).
+  date: 2026-10-13

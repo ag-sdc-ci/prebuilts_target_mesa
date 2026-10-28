@@ -6,6 +6,20 @@ package {
     default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
+prebuilt_apex {
+    name: "org.blisslabs.ag.mesa",
+    apex_name: "mesa",
+    source_apex_name: "mesa",
+    arch: {
+        x86_64: {
+            src: "org.blisslabs.ag.mesa-26.0.8-1.apex",
+        },
+    },
+    filename: "org.blisslabs.ag.mesa-26.0.8-1.apex",
+    prefer: true,
+    installable: true,
+}
+
 cc_library_headers {
     name: "EGL_headers",
     vendor_available: true,
@@ -17,7 +31,7 @@ cc_library_headers {
         "//apex_available:platform",
     ],
     export_include_dirs: [
-        "dev-src/include/EGL",
+        "include/EGL",
     ],
     min_sdk_version: "29",
 }
@@ -33,8 +47,8 @@ cc_library_headers {
         "//apex_available:platform",
     ],
     export_include_dirs: [
-        "dev-src/include/GL",
-        "dev-src/include/GL/internal",
+        "include/GL",
+        "include/GL/internal",
     ],
     min_sdk_version: "29",
 }
@@ -50,7 +64,7 @@ cc_library_headers {
         "//apex_available:platform",
     ],
     export_include_dirs: [
-        "dev-src/include/GLES",
+        "include/GLES",
     ],
     min_sdk_version: "29",
 }
@@ -66,7 +80,7 @@ cc_library_headers {
         "//apex_available:platform",
     ],
     export_include_dirs: [
-        "dev-src/include/GLES2",
+        "include/GLES2",
     ],
     min_sdk_version: "29",
 }
@@ -82,7 +96,7 @@ cc_library_headers {
         "//apex_available:platform",
     ],
     export_include_dirs: [
-        "dev-src/include/GLES3",
+        "include/GLES3",
     ],
     min_sdk_version: "29",
 }
@@ -98,7 +112,7 @@ cc_library_headers {
         "//apex_available:platform",
     ],
     export_include_dirs: [
-        "dev-src/include/KHR",
+        "include/KHR",
     ],
     min_sdk_version: "29",
 }
@@ -114,7 +128,7 @@ cc_library_headers {
         "//apex_available:platform",
     ],
     export_include_dirs: [
-        "dev-src/include",
+        "include",
     ],
     min_sdk_version: "29",
 }
